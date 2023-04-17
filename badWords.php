@@ -3,8 +3,10 @@
 $frase=$_GET['phrase'];
 $censura=$_GET['censura'];
 $lunghezzafrase = strlen(  $phrase );
-
+$testocensurato = str_replace($censura, '***', $phrase);
+$lunghezzafraseconcensura = strlen($testocensurato);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,8 +16,6 @@ $lunghezzafrase = strlen(  $phrase );
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <p><?php echo "$phrase $lunghezzafrase" ?></p>
-    </div>
+
 </body>
 </html>

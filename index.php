@@ -10,17 +10,16 @@
       <!-- INSERIMENTO FRASE-->
     <div>
     <form action="badWords.php" method="GET">
+
     <label for="phrase">Inserisci una frase </label>
     <input type="text" name="phrase" id="nome" placeholder="Inserisci la tua frase">
-    <button type="submit"> Invia</button>
-   </form> 
-    </div>
+    
     <!-- PAROLA DA CENSURARE-->
-    <div>
-    <form action="badWords.php" method="GET">
+
     <label for="censura">Inserisci una parola da censurare </label>
     <input type="text" name="censura" id="censura" placeholder="parola da censurare">
-    <button type="submit"> censura</button>
+    <button type="submit"> Invia</button>
+
    </form> 
     </div>
    
