@@ -2,8 +2,8 @@
 <?php
 $frase=$_GET['phrase'];
 $censura=$_GET['censura'];
-$lunghezzafrase = strlen(  $phrase );
-$testocensurato = str_replace($censura, '***', $phrase);
+$lunghezzafrase = strlen(  $frase );
+$testocensurato = str_replace($censura, '***', $frase);
 $lunghezzafraseconcensura = strlen($testocensurato);
 ?>
 
@@ -16,6 +16,11 @@ $lunghezzafraseconcensura = strlen($testocensurato);
     <title>Document</title>
 </head>
 <body>
-
+<h1>La frase da te scelta:</h1>
+<p><?php echo "$frase $lunghezzafrase" ?></p>
+<h3>La parola che vuoi censurare è:</h3>
+<p><?php echo "$censura"   ?></p>
+<h4>La frase censurata è:</h4>
+<p><?php echo "$testocensurato  $lunghezzafraseconcensura"   ?></p>
 </body>
 </html>
